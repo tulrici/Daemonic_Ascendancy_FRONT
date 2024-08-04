@@ -1,14 +1,24 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, Image, ScrollView } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function HomeScreen({ navigation }) {
+
   return (
     <View style={styles.container}>
+
+
       <Image source={require('../../assets/favicon.png')} style={styles.logo} />
       <Text style={styles.title}>Bienvenue chez Location de Véhicules</Text>
       <Text style={styles.subtitle}>Réservez votre véhicule préféré facilement et rapidement</Text>
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('User')}>
         <Text style={styles.buttonText}>Voir les utilisateurs</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('HooksExample')}>
+        <Text style={styles.buttonText}>Voir les Exemples de Hooks</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('DemoMenu')}>
+        <Text style={styles.buttonText}>Demo Menu</Text>
       </TouchableOpacity>
     </View>
   );

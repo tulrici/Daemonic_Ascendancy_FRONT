@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
 import { getUserApi } from '../api/userApi';
 
-export default function UserScreen() {
+export default function UserScreen({ navigation }) {
   const [utilisateurs, setUser] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -32,6 +32,9 @@ export default function UserScreen() {
           </View>
         ))}
       </ScrollView>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('CreateUser')}>
+        <Text style={styles.buttonText}>Ajouter un Utilisateur</Text>
+      </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={fetchUsers}>
         <Text style={styles.buttonText}>Refresh Users</Text>
       </TouchableOpacity>
