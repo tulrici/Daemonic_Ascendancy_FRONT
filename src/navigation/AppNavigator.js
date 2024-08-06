@@ -6,6 +6,7 @@ import UserScreen from '../screens/UserScreen';
 import HooksExampleScreen from '../screens/HooksExampleScreen';
 import DemoMenu from '../screens/DemoMenu';
 import CreateUserScreen from '../screens/CreateUserScreen';
+import Jambon from '../screens/Jambon';
 
 const Stack = createStackNavigator();
 
@@ -18,6 +19,7 @@ export default function AppNavigator() {
         <Stack.Screen name="HooksExample" component={HooksExampleScreen} options={{ title: 'Exemples de Hooks' }} />
         <Stack.Screen name="DemoMenu" component={DemoMenu} options={{ title: 'DemoMenu' }} />
         <Stack.Screen name="CreateUser" component={CreateUserScreen} options={{ title: 'Créer un Utilisateur' }} />
+        <Stack.Screen name="Jambon" component={Jambon} options={{ title: 'Jambon' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -3,20 +3,22 @@ import { View, Text, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator
 import { getUserApi } from '../api/userApi';
 
 export default function UserScreen({ navigation }) {
-  const [utilisateurs, setUser] = useState([]);
+  const [utilisateurs, setUser] = useState([]); // useState update view when the state changes
   const [loading, setLoading] = useState(false);
-
+  
+  // useEffect is a hook that runs after the first render and every time the component updates
   useEffect(() => {
     fetchUsers();
   }, []);
 
+  // async function linked to await because we have to wait for the response from the server
   async function fetchUsers() {
     try {
       setLoading(true);
       setUser(await getUserApi());
     } catch (error) {
       console.error("Error fetching users:", error);
-    } finally {
+    } finally { // passage obligatoire
       setLoading(false);
     }
   }
