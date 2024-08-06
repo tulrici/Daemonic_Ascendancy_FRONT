@@ -1,0 +1,19 @@
+{
+    "jambonsData": [
+        {
+            "id": 1,
+            "description": "Jambon de porc Gascon affiné",
+            "url": "https://www.lamaisonfrancaise.com/776-large_default/jambon-de-porc-gascon-affine.jpg"
+        },
+        {
+            "id": 2,
+            "description": "Beau jambon avec la décoration d'isolement sur le fond blanc. Beau et savoureux jambon avec des tomates d'isolement sur le fond blanc",
+            "url": "https://thumbs.dreamstime.com/z/beau-jambon-avec-la-d%C3%A9coration-d-isolement-sur-le-fond-blanc-114216589.jpg?ct=jpeg"
+        },
+        {
+            "id": 3,
+            "description": "Jambon de Bayonne IGP",
+            "url": "https://www.lesartcutiers.com/wp-content/themes/artcutiers/vignette.php?src=https://www.lesartcutiers.com/wp-content/uploads/2014/12/SAR_51223733_jambon_de_bayonne_amb_bis_bd.png&q=70&w=318"
+        }
+    ]
+}

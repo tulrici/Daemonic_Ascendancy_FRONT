@@ -13,7 +13,7 @@ const Stack = createStackNavigator();
 export default function AppNavigator() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Jambon">
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Accueil' }} />
         <Stack.Screen name="User" component={UserScreen} options={{ title: 'Utilisateurs' }} />
         <Stack.Screen name="HooksExample" component={HooksExampleScreen} options={{ title: 'Exemples de Hooks' }} />

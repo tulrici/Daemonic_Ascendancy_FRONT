@@ -1,40 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import { View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import ArticleJambon from '../components/ArticleJambon';
+import jambonsData from '../api/Jambons.json';
 
-export default function Jambon({}) {
-  const [count, setCount] = useState(0);
-  const [visible, setVisible] = useState(false);
+export default function Jambon() {
+    const [count, setCount] = useState(0);
+    const [visible, setVisible] = useState(false);
 
-  const toggleVisible = () => {
-    setVisible(!visible);
+    const toggleVisible = () => {
+        setVisible(!visible);
     };
 
+    return (
+        <View style={styles.container}>
+            <TouchableOpacity onPress={() => setCount(count + 1)}>
+                <Text>Plus de Jambons, évidemment.</Text>
+            </TouchableOpacity>
 
-  return (
-    <View>
-      <TouchableOpacity 
-      onPress={() => setCount(count + 1)}>
-        <Text>Plus de Jambons, évidemment.</Text>
-      </TouchableOpacity>
+            <TouchableOpacity onPress={() => setCount(count - 1)}>
+                <Text>Moins de Jambons, mais pourquoi ?</Text>
+            </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => setCount(count - 1)}>
-        <Text>Moins de Jambons, mais pourquoi ?</Text>
-      </TouchableOpacity>
+            <Text>Vous avez {count} jambons</Text>
 
-      <Text>Vous avez {count} jambons</Text>
+            <TouchableOpacity onPress={() => toggleVisible()}>
+                <Text>Toggle Jambon ci-dessous &#x1F447;</Text>
+            </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => toggleVisible()}>
-            <Text>Créer un Jambon à regarder</Text>
-        </TouchableOpacity>
-        {visible && <ArticleJambon />}
-    </View>
-  );
+            {visible && jambonsData.jambonsData.map(element => (
+                <ArticleJambon description={element.description} url={element.url} />
+            ))}
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  TextTitre: {
-    color: '#fff',
-    fontSize: 25,
-  },
+    container: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 });
