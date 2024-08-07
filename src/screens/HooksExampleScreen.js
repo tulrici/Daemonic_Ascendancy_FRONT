@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext, useReducer, useCallback, useMemo, useRef } from 'react';
 import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
+import NavBar from '../components/NavBar';
 
 // Exemples de contextes et de reducers
 const MyContext = React.createContext();
@@ -128,6 +129,9 @@ export default function HooksExampleScreen() {
         </Text>
         <Text className="text-base font-bold text-gray-700">Ref Value: {countRef.current}</Text>
       </View>
+
+
+      <NavBar />
     </ScrollView>
   );
 }

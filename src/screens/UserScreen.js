@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
 import { getUserApi } from '../api/userApi';
+import NavBar from '../components/NavBar';
 
 export default function UserScreen({ navigation }) {
   const [utilisateurs, setUser] = useState([]); // useState update view when the state changes
@@ -40,6 +41,8 @@ export default function UserScreen({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={fetchUsers}>
         <Text style={styles.buttonText}>Refresh Users</Text>
       </TouchableOpacity>
+
+      <NavBar />
     </View>
   );
 }

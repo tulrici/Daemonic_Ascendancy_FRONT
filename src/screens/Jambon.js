@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import ArticleJambon from '../components/ArticleJambon';
 import jambonsData from '../api/Jambons.json';
+import NavBar from '../components/NavBar';
 
 export default function Jambon() {
     const [count, setCount] = useState(0);
@@ -34,6 +35,8 @@ export default function Jambon() {
                     url={element.url}
                 />
             ))}
+
+            <NavBar />
         </View>
     );
 }

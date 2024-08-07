@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet, Image, Text, TouchableOpacity } from 'react-native';
 import MenuRight from '../components/MenuRight';
 import Button from '../components/Button';
+import NavBar from '../components/NavBar';
 
 export default function DemoMenu({ navigation }) {
   return (
@@ -21,6 +22,8 @@ export default function DemoMenu({ navigation }) {
         <Text className="text-center text-white text-lg">Voir les Exemples de Hooks</Text>
       </TouchableOpacity>
       
+
+      <NavBar />
     </View>
   );
 }

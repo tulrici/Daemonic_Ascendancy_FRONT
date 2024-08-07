@@ -1,11 +1,14 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import LeagueList from '../components/LeagueList';
+import NavBar from '../components/NavBar';
 
 export default function LeagueVue({ navigation }) {
   return (
     <View style={styles.container}>
-      <LigueList />
+      <LeagueList />
+
+      <NavBar />
     </View>
   );
 }

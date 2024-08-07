@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, ScrollView } from 'react-native';
 import { createUser } from '../api/userApi';
+import NavBar from '../components/NavBar';
 
 export default function CreateUserScreen({ navigation }) {
   const [formData, setFormData] = useState({
@@ -68,6 +69,8 @@ export default function CreateUserScreen({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={handleSubmit}>
         <Text style={styles.buttonText}>Créer l'utilisateur</Text>
       </TouchableOpacity>
+
+      <NavBar />
     </ScrollView>
   );
 }

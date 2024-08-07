@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import GameList from '../components/GameList';
+import NavBar from '../components/NavBar';
 
 export default function GameVue({ navigation }) {
   return (
@@ -14,6 +15,7 @@ export default function GameVue({ navigation }) {
         <Text style={styles.buttonText}>Add a Game</Text>
       </TouchableOpacity>
 
+      <NavBar />
     </View>
   );
 }

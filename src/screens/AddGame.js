@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, ScrollView } from 'react-native';
+import NavBar from '../components/NavBar';
 
 // Replace this with your local data source or a mock data update
 import gamesData from '../api/games.json'; // Adjust path as necessary
@@ -76,6 +77,8 @@ export default function AddGame({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={handleSubmit}>
         <Text style={styles.buttonText}>Valider</Text>
       </TouchableOpacity>
+
+      <NavBar />
     </ScrollView>
   );
 }
