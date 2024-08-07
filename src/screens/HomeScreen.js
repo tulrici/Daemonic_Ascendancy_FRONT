@@ -14,9 +14,13 @@ export default function HomeScreen({ navigation }) {
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('CreateUser')}>
         <Text style={styles.buttonText}>Create User</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Games')}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('GameVue')}>
         <Text style={styles.buttonText}>Liste des Games jouées</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Jambon')}>
+        <Text style={styles.buttonText}>Exercices React Native</Text>
+      </TouchableOpacity>
+
     </View>
   );
 }

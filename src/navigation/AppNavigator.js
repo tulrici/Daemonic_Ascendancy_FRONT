@@ -8,6 +8,7 @@ import DemoMenu from '../screens/DemoMenu';
 import CreateUserScreen from '../screens/CreateUserScreen';
 import Jambon from '../screens/Jambon';
 import GameVue from '../screens/GameVue';
+import AddGame from '../screens/AddGame';
 
 
 const Stack = createStackNavigator();
@@ -22,7 +23,8 @@ export default function AppNavigator() {
         <Stack.Screen name="DemoMenu" component={DemoMenu} options={{ title: 'DemoMenu' }} />
         <Stack.Screen name="CreateUser" component={CreateUserScreen} options={{ title: 'Créer un Utilisateur' }} />
         <Stack.Screen name="Jambon" component={Jambon} options={{ title: 'Jambon' }} />
-        <Stack.Screen name="Games" component={GameVue} options={{ title: 'Games' }} />  
+        <Stack.Screen name="GameVue" component={GameVue} options={{ title: 'Games jouées' }} /> 
+        <Stack.Screen name="AddGame" component={AddGame} options={{ title: 'Ajouter une Game' }} />  
       </Stack.Navigator>
     </NavigationContainer>
   );
