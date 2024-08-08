@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import LeagueItem from './LeagueItem';
 import leaguesData from '../../api/leagues.json';
 
-export default function LeagueList() {
+export default function LeagueList({navigation}) {
     return (
         <View>
             {leaguesData.leagues
@@ -13,7 +13,9 @@ export default function LeagueList() {
                         key={index}
                         name={league.name}
                         namePlayers={league.users}
+                        league={league}
                         live={league.live}
+                        navigation={navigation}
                     />
                 ))}
         </View>

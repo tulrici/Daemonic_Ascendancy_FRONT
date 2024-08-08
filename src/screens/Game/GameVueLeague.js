@@ -1,26 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import GameList from '../../components/Game/GameList';
 import NavBar from '../../components/NavBar';
 
-export default function GameVueLeague({ navigation }) {
+export default function GameVueLeague({ route, navigation }) {
+    const { league } = route.params;  // Destructure league from route params
 
-    const [visible, setVisible] = useState(false);
-    const toggleVisible = () => setVisible(!visible);
-
-    if (league.live) {
-        toggleVisible(true);
-    }
+    const [visible, setVisible] = useState(league.live);
 
     return (
         <View style={styles.container}>
-            <GameList />
+            <GameList leagueId={league.id} />
 
             {/* Add a game button only if league is alive */}
             {visible &&
                 <TouchableOpacity
                     style={styles.button}
-                    onPress={() => navigation.navigate('AddGame')}>
+                    onPress={() => navigation.navigate('AddGame', { leagueId: league.id })}>
                     <Text style={styles.buttonText}>Add a Game</Text>
                 </TouchableOpacity>
             }

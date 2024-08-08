@@ -15,6 +15,7 @@ export default function LeagueListEnd() {
                         name={league.name}
                         namePlayers={league.users}
                         live={league.live}
+                        navigation={navigation}
                     />
                 ))}
         </View>

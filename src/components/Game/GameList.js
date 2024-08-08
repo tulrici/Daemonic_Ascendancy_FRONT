@@ -15,6 +15,7 @@ export default function GameList() {
                     scorePlayer1={game.scorePlayer1}
                     scorePlayer2={game.scorePlayer2}
                     date={game.date}
+                    league={game.league}
                 />
             ))}
         </View>

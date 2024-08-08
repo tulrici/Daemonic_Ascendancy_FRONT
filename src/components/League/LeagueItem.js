@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 
-export default function LeagueItem({ name }) {
+export default function LeagueItem({ name, navigation }) {
 
     function first() {
         //TODO BACKEND: return the first(s) of the league
@@ -19,6 +19,7 @@ export default function LeagueItem({ name }) {
 
         </View>
     );
+
 }
 
 const styles = StyleSheet.create({

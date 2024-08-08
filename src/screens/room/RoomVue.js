@@ -5,7 +5,7 @@ import NavBar from '../../components/NavBar';
 
 //TODO how to managage CRUD for room ?
 
-export default function GameVue({ navigation }) {
+export default function GameVue({ }) {
     return (
         <View style={styles.container}>
             <RoomList />

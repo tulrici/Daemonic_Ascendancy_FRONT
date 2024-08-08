@@ -4,14 +4,14 @@ import LeagueList from '../../components/League/LeagueList'; // Assuming this co
 import LeagueListEnd from '../../components/League/LeagueListEnd'; // Assuming this component displays completed leagues
 import NavBar from '../../components/NavBar';
 
-export default function LeagueVue({ navigation }) {
+export default function LeagueVue({ navigation=navigation }) {
     const [visible, setVisible] = useState(false);
     const toggleVisible = () => setVisible(!visible);
 
     return (
         <View style={styles.container}>
             <ScrollView contentContainerStyle={styles.scrollContainer}>
-                <LeagueList />
+                <LeagueList navigation={navigation} />
                 
                 <View style={styles.toggleContainer}>
                     <TouchableOpacity style={styles.button} onPress={toggleVisible}>
