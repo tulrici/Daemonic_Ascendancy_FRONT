@@ -19,11 +19,11 @@ export default function NavBar() {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={navigateToHome} style={styles.navButton}>
-                <Icon name="home" size={30} color="#fff" /> {/* White icon for contrast */}
+                <Icon name="home" size={30} color="#fff" /> 
             </TouchableOpacity>
 
             <TouchableOpacity onPress={navigateToProfile} style={styles.navButton}>
-                <Icon name="person" size={30} color="#fff" /> {/* White icon for contrast */}
+                <Icon name="person" size={30} color="#fff" />
             </TouchableOpacity>
         </View>
     );
