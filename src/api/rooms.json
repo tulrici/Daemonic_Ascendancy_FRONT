@@ -1,61 +1,88 @@
 {
     "rooms": [
-      {
-        "name": "Puzzle Inn",
-        "link": "https://www.puzzle-inn.com/wp-content/uploads/2020/09/Logo-Puzzle-Inn-1.png",
-        "image": "data:image/png;base64,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",
-        "users": [
-            {
-                "id": 1,
-                "name": "exodes"
-            },
-            {
-                "id": 4,
-                "name": "Wynian"
-            }
-        ],        "game": "Warhammer 40k",
-        "reservationDate": "2024-08-10",
-        "logo": "assets/logoPuzzleInn.png"
-
-      },
-      {
-        "name": "Puzzle Inn",
-        "users": [
-            {
-                "id": 2,
-                "name": "Jambons"
-            },
-            {
-                "id": 3,
-                "name": "Be'Lakor"
-            }
-        ],        "game": "Age of Sigmar",
-        "reservationDate": "2024-08-11",
-        "logo": "assets/logoPuzzleInn.png"
-      },
-      {
-        "name": "Double Six",
-        "users": [
-            {
-                "id": 1,
-                "name": "exodes"
-            },
-            {
-                "id": 2,
-                "name": "Jambons"
-            },
-            {
-                "id": 3,
-                "name": "Be'Lakor"
-            },
-            {
-                "id": 4,
-                "name": "Wynian"
-            }
-        ],        "game": "Belote",
-        "reservationDate": "2024-08-12",
-        "logo": ""
-      }
+        {
+            "name": "Puzzle Inn",
+            "link": "https://www.puzzle-inn.com/wp-content/uploads/2020/09/Logo-Puzzle-Inn-1.png",
+            "users": [
+                {
+                    "id": 1,
+                    "name": "exodes"
+                },
+                {
+                    "id": 4,
+                    "name": "Wynian"
+                }
+            ],
+            "game": "Warhammer 40k",
+            "reservationDate": "2024-08-10",
+            "logo": "assets/logoPuzzleInn.png"
+        },
+        {
+            "name": "Puzzle Inn",
+            "link": "hhttps://www.puzzle-inn.fr",
+            "users": [
+                {
+                    "id": 2,
+                    "name": "Jambons"
+                },
+                {
+                    "id": 3,
+                    "name": "Be'Lakor"
+                }
+            ],
+            "game": "Age of Sigmar",
+            "reservationDate": "2024-08-11",
+            "logo": "assets/logoPuzzleInn.png"
+        },
+        {
+            "name": "Double Six",
+            "link": "",
+            "users": [
+                {
+                    "id": 1,
+                    "name": "exodes"
+                },
+                {
+                    "id": 2,
+                    "name": "Jambons"
+                },
+                {
+                    "id": 3,
+                    "name": "Be'Lakor"
+                },
+                {
+                    "id": 4,
+                    "name": "Wynian"
+                }
+            ],
+            "game": "Belote",
+            "reservationDate": "2024-08-12",
+            "logo": ""
+        },
+        {
+            "name": "Trollune",
+            "link": "https://www.trollune.fr/planning/",
+            "users": [
+                {
+                    "id": 1,
+                    "name": "exodes"
+                },
+                {
+                    "id": 2,
+                    "name": "Jambons"
+                },
+                {
+                    "id": 3,
+                    "name": "Be'Lakor"
+                },
+                {
+                    "id": 4,
+                    "name": "Wynian"
+                }
+            ],
+            "game": "Belote",
+            "reservationDate": "2024-08-12",
+            "logo": "assets/logoTrollune.jpeg"
+        }
     ]
-  }
-  
+}
