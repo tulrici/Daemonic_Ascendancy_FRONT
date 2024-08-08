@@ -6,19 +6,103 @@
             "users": [
                 {
                     "id": 1,
-                    "name": "exodes"
+                    "name": "exodes",
+                    "score": 13
                 },
                 {
                     "id": 2,
-                    "name": "Jambons"
+                    "name": "Jambons",
+                    "score": -101
                 },
                 {
                     "id": 3,
-                    "name": "Be'Lakor"
+                    "name": "Be'Lakor",
+                    "score": 22
                 },
                 {
                     "id": 4,
-                    "name": "Wynian"
+                    "name": "Wynian",
+                    "score": 46
+                }
+            ],
+            "games": [
+                {
+                    "id": 1,
+                    "name": "exodes vs jambons",
+                    "users": [
+                        {
+                            "id": 1,
+                            "name": "exodes"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Jambons"
+                        }
+                    ],
+                    "scorePlayer1": 15,
+                    "scorePlayer2": 5,
+                    "date": "2024-08-01"
+                },
+                {
+                    "id": 2,
+                    "name": "Game",
+                    "users": [
+                        {
+                            "id": 3,
+                            "name": "Be'Lakor"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Jambons"
+                        }
+                    ],
+                    "scorePlayer1": 20,
+                    "scorePlayer2": 0,
+                    "date": "2024-08-02"
+                },
+                {
+                    "id": 3,
+                    "name": "exodes vs Wynian",
+                    "users": [
+                        {
+                            "id": 1,
+                            "name": "exodes"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Wynian"
+                        }
+                    ],
+                    "scorePlayer1": 3,
+                    "scorePlayer2": 17,
+                    "date": "2024-08-03"
+                }
+            ],
+            "live": false
+        },
+        {
+            "id": 1,
+            "name": "Ligue été 2024",
+            "users": [
+                {
+                    "id": 1,
+                    "name": "exodes",
+                    "score": 2
+                },
+                {
+                    "id": 2,
+                    "name": "Jambons",
+                    "score": -211
+                },
+                {
+                    "id": 3,
+                    "name": "Be'Lakor",
+                    "score": 0
+                },
+                {
+                    "id": 4,
+                    "name": "Wynian",
+                    "score": 101
                 }
             ],
             "games": [
@@ -76,5 +160,6 @@
             ],
             "live": true
         }
+
     ]
 }

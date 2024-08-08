@@ -7,11 +7,11 @@ import HooksExampleScreen from '../screens/HooksExampleScreen';
 import DemoMenu from '../screens/DemoMenu';
 import CreateUserScreen from '../screens/CreateUserScreen';
 import Jambon from '../screens/Jambon';
-import GameVue from '../screens/GameVue';
-import AddGame from '../screens/AddGame';
-import LeagueVue from '../screens/LeagueVue';
-import User from '../screens/UserVue';
-import RoomVue from '../screens/RoomVue';
+import GameVue from '../screens/Game/GameVue';
+import AddGame from '../screens/Game/AddGame';
+import LeagueVue from '../screens/league/LeagueVue';
+import User from '../screens/profile/UserVue';
+import RoomVue from '../screens/room/RoomVue';
 
 const Stack = createStackNavigator();
 

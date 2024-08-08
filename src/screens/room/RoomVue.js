@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import RoomList from '../components/RoomList';
-import NavBar from '../components/NavBar';
+import RoomList from '../../components/Room/RoomList';
+import NavBar from '../../components/NavBar';
 
 export default function GameVue({ navigation }) {
     return (

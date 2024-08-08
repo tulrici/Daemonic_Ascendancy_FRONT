@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import UserItem from './UserItem';
-import UsersData from '../api/users.json';
+import UsersData from '../../api/users.json';
 
 export default function RoomList() {
     return (

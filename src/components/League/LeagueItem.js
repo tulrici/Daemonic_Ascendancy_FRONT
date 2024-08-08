@@ -4,9 +4,9 @@ import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 export default function LeagueItem({ name }) {
 
     function first() {
-        return ("JeanMich(s) is currently first of the league with n points !");
+        return (<Text>"JeanMich(s) is currently first of the league with n points !"</Text>);
     }
-//TODO : return the first, firsts if exaequo of the league
+//TODO BACKEND: return the first, firsts if exaequo of the league
 // trier "user.thisleague.score" ?
 
 

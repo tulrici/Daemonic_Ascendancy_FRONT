@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import GameItem from './GameItem';
-import gamesData from '../api/games.json';
+import gamesData from '../../api/games.json';
 
 export default function GameList() {
     return (

@@ -1,19 +1,12 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import GameList from '../components/GameList';
-import NavBar from '../components/NavBar';
+import UserList from '../../components/User/UserList';
+import NavBar from '../../components/NavBar';
 
-export default function GameVue({ navigation }) {
+export default function UserVue({ navigation }) {
     return (
         <View style={styles.container}>
-            <GameList />
-
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => navigation.navigate('AddGame')}>
-                <Text style={styles.buttonText}>Add a Game</Text>
-            </TouchableOpacity>
-
+            <UserList />
             <NavBar />
         </View>
     );

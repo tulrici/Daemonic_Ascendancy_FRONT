@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import RoomItem from './RoomItem';
-import RoomsData from '../api/rooms.json';
+import RoomsData from '../../api/rooms.json';
 
 export default function RoomList() {
     return (

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import LeagueList from '../components/LeagueList';
-import LeagueListEnd from '../components/LeagueListEnd';
-import NavBar from '../components/NavBar';
+import LeagueList from '../../components/League/LeagueList';
+import LeagueListEnd from '../../components/League/LeagueListEnd';
+import NavBar from '../../components/NavBar';
 
 export default function LeagueVue({ navigation }) {
 

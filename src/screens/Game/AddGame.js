@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Alert, ScrollView } from 'react-native';
-import NavBar from '../components/NavBar';
+import NavBar from '../../components/NavBar';
 
 // Replace this with your local data source or a mock data update
-import gamesData from '../api/games.json'; // Adjust path as necessary
+import gamesData from '../../api/games.json'; // Adjust path as necessary
 
 export default function AddGame({ navigation }) {
     const [formData, setFormData] = useState({
