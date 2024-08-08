@@ -3,11 +3,11 @@ import { View, StyleSheet } from 'react-native';
 import LeagueItem from './LeagueItem';
 import leaguesData from '../api/leagues.json';
 
-export default function LeagueList() {
+export default function LeagueListEnd() {
     return (
         <View>
             {leaguesData.leagues
-                .filter(league => league.live)
+                .filter(league => !league.live)
                 .map((league, index) => (
                     <LeagueItem
                         key={index}

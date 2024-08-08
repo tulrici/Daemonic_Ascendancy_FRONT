@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import UserList from '../components/UserList';
+import RoomList from '../components/RoomList';
 import NavBar from '../components/NavBar';
 
-export default function UserVue({ navigation }) {
+export default function GameVue({ navigation }) {
     return (
         <View style={styles.container}>
-            <UserList />
+            <RoomList />
             <NavBar />
         </View>
     );

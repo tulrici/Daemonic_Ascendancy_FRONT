@@ -1,0 +1,55 @@
+{
+    "rooms": [
+      {
+        "name": "Puzzle Inn",
+        "users": [
+            {
+                "id": 1,
+                "name": "exodes"
+            },
+            {
+                "id": 4,
+                "name": "Wynian"
+            }
+        ],        "game": "Warhammer 40k",
+        "reservationDate": "2024-08-10"
+      },
+      {
+        "name": "Puzzle Inn",
+        "users": [
+            {
+                "id": 2,
+                "name": "Jambons"
+            },
+            {
+                "id": 3,
+                "name": "Be'Lakor"
+            }
+        ],        "game": "Age of Sigmar",
+        "reservationDate": "2024-08-11"
+      },
+      {
+        "name": "Double Six",
+        "users": [
+            {
+                "id": 1,
+                "name": "exodes"
+            },
+            {
+                "id": 2,
+                "name": "Jambons"
+            },
+            {
+                "id": 3,
+                "name": "Be'Lakor"
+            },
+            {
+                "id": 4,
+                "name": "Wynian"
+            }
+        ],        "game": "Belote",
+        "reservationDate": "2024-08-12"
+      }
+    ]
+  }
+  

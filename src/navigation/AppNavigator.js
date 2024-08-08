@@ -11,6 +11,7 @@ import GameVue from '../screens/GameVue';
 import AddGame from '../screens/AddGame';
 import LeagueVue from '../screens/LeagueVue';
 import User from '../screens/UserVue';
+import RoomVue from '../screens/RoomVue';
 
 const Stack = createStackNavigator();
 
@@ -30,8 +31,6 @@ export default function AppNavigator() {
         }}
       >
         <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Accueil' }} />
-        <Stack.Screen name="User" component={User} options={{ title: 'Votre compte' }} />
-        <Stack.Screen name="UserTom" component={UserScreen} options={{ title: 'Utilisateurs' }} />
         <Stack.Screen name="HooksExample" component={HooksExampleScreen} options={{ title: 'Exemples de Hooks' }} />
         <Stack.Screen name="DemoMenu" component={DemoMenu} options={{ title: 'DemoMenu' }} />
         <Stack.Screen name="CreateUser" component={CreateUserScreen} options={{ title: 'Créer un Utilisateur' }} />
@@ -39,6 +38,8 @@ export default function AppNavigator() {
         <Stack.Screen name="GameVue" component={GameVue} options={{ title: 'Games jouées' }} /> 
         <Stack.Screen name="AddGame" component={AddGame} options={{ title: 'Ajouter une Game' }} />  
         <Stack.Screen name="LeagueVue" component={LeagueVue} options={{ title: 'Liste des Leagues' }} />  
+        <Stack.Screen name="UserVue" component={User} options={{ title: 'Votre compte' }} />
+        <Stack.Screen name="RoomVue" component={RoomVue} options={{ title: 'Liste des Salles' }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

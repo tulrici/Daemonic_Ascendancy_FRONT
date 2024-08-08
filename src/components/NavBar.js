@@ -6,43 +6,43 @@ import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export default function NavBar() {
-  const navigation = useNavigation();
+    const navigation = useNavigation();
 
-  const navigateToHome = () => {
-    navigation.navigate('Home');
-  };
+    const navigateToHome = () => {
+        navigation.navigate('Home');
+    };
 
-  const navigateToProfile = () => {
-    navigation.navigate('Profile');
-  };
+    const navigateToProfile = () => {
+        navigation.navigate('Profile');
+    };
 
-  return (
-    <View style={styles.container}>
-      <TouchableOpacity onPress={navigateToHome} style={styles.navButton}>
-        <Icon name="home" size={30} color="#fff" /> {/* White icon for contrast */}
-      </TouchableOpacity>
+    return (
+        <View style={styles.container}>
+            <TouchableOpacity onPress={navigateToHome} style={styles.navButton}>
+                <Icon name="home" size={30} color="#fff" /> {/* White icon for contrast */}
+            </TouchableOpacity>
 
-      <TouchableOpacity onPress={navigateToProfile} style={styles.navButton}>
-        <Icon name="person" size={30} color="#fff" /> {/* White icon for contrast */}
-      </TouchableOpacity>
-    </View>
-  );
+            <TouchableOpacity onPress={navigateToProfile} style={styles.navButton}>
+                <Icon name="person" size={30} color="#fff" /> {/* White icon for contrast */}
+            </TouchableOpacity>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: '#1c1c1c', // Dark gray background
-    padding: 10,
-    borderTopWidth: 1,
-    borderTopColor: '#333', // Slightly lighter gray for border
-    width: Dimensions.get('window').width, // Full width of the screen
-    position: 'absolute',
-    bottom: 0,
-  },
-  navButton: {
-    padding: 10,
-  },
+    container: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#1c1c1c', // Dark gray background
+        padding: 10,
+        borderTopWidth: 1,
+        borderTopColor: '#333', // Slightly lighter gray for border
+        width: Dimensions.get('window').width, // Full width of the screen
+        position: 'absolute',
+        bottom: 0,
+    },
+    navButton: {
+        padding: 10,
+    },
 });

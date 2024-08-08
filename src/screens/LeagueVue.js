@@ -1,12 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import LeagueList from '../components/LeagueList';
+import LeagueListEnd from '../components/LeagueListEnd';
 import NavBar from '../components/NavBar';
 
 export default function LeagueVue({ navigation }) {
+
+  const [visible, setVisible] = useState(false);
+  const toggleVisible = () => {
+    setVisible(!visible);
+  }
   return (
     <View style={styles.container}>
       <LeagueList />
+
+      <TouchableOpacity style={styles.button} onPress={() => toggleVisible}>
+        <Text style={styles.buttonText}>Voir les ligues terminées</Text>
+        {visible && <LeagueListEnd />}
+      </TouchableOpacity>
+
 
       <NavBar />
     </View>

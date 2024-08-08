@@ -1,0 +1,25 @@
+{
+    "users": [
+      {
+        "userName": "exodes",
+        "email": "exodes.101@example.com"
+      },
+      {
+        "userName": "Be'Lakor",
+        "email": "bebel.lakokor@example.com"
+      },
+      {
+        "userName": "Wynian",
+        "email": "wynian.lui@example.com"
+      },
+      {
+        "userName": "Jambons",
+        "email": "jean.bon@example.com"
+      },
+      {
+        "userName": "Tom",
+        "email": "tom.deprez@random.com"
+      }
+    ]
+  }
+  

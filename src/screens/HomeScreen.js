@@ -9,19 +9,15 @@ export default function HomeScreen({ navigation }) {
       <Image source={require('../../assets/albericdevordeux-.jpg')} style={styles.logo} />
       <Text style={styles.title}>Welcome to Daemonic Ascendency</Text>
       <Text style={styles.subtitle}> Try to climb your path to immortality</Text>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('User')}>
-        <Text style={styles.buttonText}>Voir les utilisateurs</Text>
-      </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('LeagueVue')}>
         <Text style={styles.buttonText}>Liste des Leagues</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('GameVue')}>
         <Text style={styles.buttonText}>Liste des Games jouées</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Jambon')}>
-        <Text style={styles.buttonText}>Exercices React Native</Text>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('RoomVue')}>
+        <Text style={styles.buttonText}>Liste des Rooms</Text>
       </TouchableOpacity>
-
       <NavBar />
     </View>
   );

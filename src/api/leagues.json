@@ -1,78 +1,80 @@
-[
-    {
-        "id": 1,
-        "name": "Ligue printemps 2024",
-        "users": [
-            {
-                "id": 1,
-                "name": "exodes"
-            },
-            {
-                "id": 2,
-                "name": "Jambons"
-            },
-            {
-                "id": 3,
-                "name": "Be'Lakor"
-            },
-            {
-                "id": 4,
-                "name": "Wynian"
-            }
-        ],
-        "games": [
-            {
-                "id": 1,
-                "name": "exodes vs jambons",
-                "users": [
-                    {
-                        "id": 1,
-                        "name": "exodes"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Jambons"
-                    }
-                ],
-                "scorePlayer1": 15,
-                "scorePlayer2": 5,
-                "date": "2024-08-01"
-            },
-            {
-                "id": 2,
-                "name": "Game",
-                "users": [
-                    {
-                        "id": 3,
-                        "name": "Be'Lakor"
-                    },
-                    {
-                        "id": 2,
-                        "name": "Jambons"
-                    }
-                ],
-                "scorePlayer1": 20,
-                "scorePlayer2": 0,
-                "date": "2024-08-02"
-            },
-            {
-                "id": 3,
-                "name": "exodes vs Wynian",
-                "users": [
-                    {
-                        "id": 1,
-                        "name": "exodes"
-                    },
-                    {
-                        "id": 4,
-                        "name": "Wynian"
-                    }
-                ],
-                "scorePlayer1": 3,
-                "scorePlayer2": 17,
-                "date": "2024-08-03"
-            }
-        ],
-        "live": true
-    }
-]
+{
+    "leagues": [
+        {
+            "id": 1,
+            "name": "Ligue printemps 2024",
+            "users": [
+                {
+                    "id": 1,
+                    "name": "exodes"
+                },
+                {
+                    "id": 2,
+                    "name": "Jambons"
+                },
+                {
+                    "id": 3,
+                    "name": "Be'Lakor"
+                },
+                {
+                    "id": 4,
+                    "name": "Wynian"
+                }
+            ],
+            "games": [
+                {
+                    "id": 1,
+                    "name": "exodes vs jambons",
+                    "users": [
+                        {
+                            "id": 1,
+                            "name": "exodes"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Jambons"
+                        }
+                    ],
+                    "scorePlayer1": 15,
+                    "scorePlayer2": 5,
+                    "date": "2024-08-01"
+                },
+                {
+                    "id": 2,
+                    "name": "Game",
+                    "users": [
+                        {
+                            "id": 3,
+                            "name": "Be'Lakor"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Jambons"
+                        }
+                    ],
+                    "scorePlayer1": 20,
+                    "scorePlayer2": 0,
+                    "date": "2024-08-02"
+                },
+                {
+                    "id": 3,
+                    "name": "exodes vs Wynian",
+                    "users": [
+                        {
+                            "id": 1,
+                            "name": "exodes"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Wynian"
+                        }
+                    ],
+                    "scorePlayer1": 3,
+                    "scorePlayer2": 17,
+                    "date": "2024-08-03"
+                }
+            ],
+            "live": true
+        }
+    ]
+}
