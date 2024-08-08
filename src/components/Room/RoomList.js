@@ -12,7 +12,7 @@ export default function RoomList() {
                     name={Room.name}
                     namePlayers={Room.users}
                     logo={Room.logo}
-                    date={Room.reservationDate}
+                    reservationDate={Room.reservationDate}
                     game={Room.game} //jeu joué
                 />
             ))}
