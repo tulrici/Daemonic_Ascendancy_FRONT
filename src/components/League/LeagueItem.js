@@ -13,7 +13,7 @@ export default function LeagueItem({ name }) {
     return (
         <View style={styles.itemContainer}>
             <Text style={styles.ligueName}>{name}</Text>
-            {first()}
+             <Text style={styles.textContainer}>"JeanMich(s) is/are currently first of the league with n points !"</Text>
 
             <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('GameVue')}>
                 <Text style={styles.buttonText}>Voir les games de la ligue</Text>
@@ -36,5 +36,14 @@ const styles = StyleSheet.create({
         color: '#ff6666',
         fontSize: 18,
         fontWeight: 'bold',
+    },
+    buttonText: {
+        color: '#ffcc00', // Gold text on buttons
+        fontSize: 12,
+        textAlign: 'center',
+    },
+    textContainer: {
+        color: '#ffcc00',
+        fontSize: 14,
     },
 });

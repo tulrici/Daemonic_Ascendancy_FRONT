@@ -1,0 +1,45 @@
+{
+    "rooms": [
+        {
+            "name": "Puzzle Inn",
+            "link": "https://www.puzzle-inn.com/wp-content/uploads/2020/09/Logo-Puzzle-Inn-1.png",
+            "image": "assets/logoPuzzleInn.png",
+            "mail": "",
+            "discord": "skyrael",
+            "phone": "",
+            "adresse": "Puzzle Inn, 1278 Rue de Créqui 69007 LYON",
+            "availlability": [
+                {
+                    "days": [
+                        "samedi après-midi"
+                    ],
+                    "games": [
+                        "Warhammer 40k",
+                        "Age of Sigmar",
+                        "other"
+                    ],
+                    "nbGrandesTables": 2,
+                    "nbPetitesTables": 2
+                }
+            ]
+        },
+        {
+            "name": "Double Six",
+            "link": "",
+            "image": "",
+            "mail": "",
+            "discord": "sylvain.passot",
+            "phone": "",
+            "adresse": "Double Six, 6 Rue de la Barre 69002 LYON"
+        },
+        {
+            "name": "grande salle Trollune",
+            "link": "",
+            "image": "",
+            "mail": "",
+            "discord": "trollune",
+            "phone": "",
+            "adresse": "Trollune, 25 Rue Sébastien Gryphe 69007 LYON"
+        }
+    ]
+}

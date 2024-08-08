@@ -11,6 +11,8 @@ export default function RoomList() {
                     key={index}
                     name={Room.name}
                     namePlayers={Room.users}
+                    logo={Room.logo}
+                    date={Room.reservationDate}
                     game={Room.game} //jeu joué
                 />
             ))}

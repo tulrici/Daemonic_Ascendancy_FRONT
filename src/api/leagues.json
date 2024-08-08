@@ -1,5 +1,115 @@
 {
     "leagues": [
+
+        {
+            "id": 2,
+            "name": "Ligue automne 2024",
+            "users": [
+                {
+                    "id": 1,
+                    "name": "exodes",
+                    "score": 5
+                },
+                {
+                    "id": 2,
+                    "name": "Jambons",
+                    "score": 10
+                },
+                {
+                    "id": 3,
+                    "name": "Be'Lakor",
+                    "score": 8
+                }
+            ],
+            "games": [
+                {
+                    "id": 1,
+                    "name": "exodes vs Jambons",
+                    "users": [
+                        {
+                            "id": 1,
+                            "name": "exodes"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Jambons"
+                        }
+                    ],
+                    "scorePlayer1": 7,
+                    "scorePlayer2": 3,
+                    "date": "2024-09-01"
+                },
+                {
+                    "id": 2,
+                    "name": "Be'Lakor vs exodes",
+                    "users": [
+                        {
+                            "id": 3,
+                            "name": "Be'Lakor"
+                        },
+                        {
+                            "id": 1,
+                            "name": "exodes"
+                        }
+                    ],
+                    "scorePlayer1": 2,
+                    "scorePlayer2": 4,
+                    "date": "2024-09-02"
+                },
+                {
+                    "id": 3,
+                    "name": "Jambons vs Be'Lakor",
+                    "users": [
+                        {
+                            "id": 2,
+                            "name": "Jambons"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Be'Lakor"
+                        }
+                    ],
+                    "scorePlayer1": 1,
+                    "scorePlayer2": 0,
+                    "date": "2024-09-03"
+                },
+                {
+                    "id": 4,
+                    "name": "exodes vs Jambons",
+                    "users": [
+                        {
+                            "id": 1,
+                            "name": "exodes"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Jambons"
+                        }
+                    ],
+                    "scorePlayer1": 6,
+                    "scorePlayer2": 4,
+                    "date": "2024-09-04"
+                },
+                {
+                    "id": 5,
+                    "name": "Be'Lakor vs exodes",
+                    "users": [
+                        {
+                            "id": 3,
+                            "name": "Be'Lakor"
+                        },
+                        {
+                            "id": 1,
+                            "name": "exodes"
+                        }
+                    ],
+                    "scorePlayer1": 3,
+                    "scorePlayer2": 2,
+                    "date": "2024-09-05"
+                }
+            ],
+            "live": false
+        },
         {
             "id": 1,
             "name": "Ligue printemps 2024",

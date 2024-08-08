@@ -1,14 +1,18 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
-import RoomList from '../../components/Room/RoomList';
+import GameList from '../../components/Game/GameList';
 import NavBar from '../../components/NavBar';
-
-//TODO how to managage CRUD for room ?
 
 export default function GameVue({ navigation }) {
     return (
         <View style={styles.container}>
-            <RoomList />
+            <GameList />
+
+            <TouchableOpacity
+                style={styles.button}
+                onPress={() => navigation.navigate('AddGame')}>
+            </TouchableOpacity>
+
             <NavBar />
         </View>
     );
