@@ -1,0 +1,1 @@
+//TODO detail of a game when clicked on

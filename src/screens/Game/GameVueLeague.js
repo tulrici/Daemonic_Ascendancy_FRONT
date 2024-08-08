@@ -3,16 +3,27 @@ import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import GameList from '../../components/Game/GameList';
 import NavBar from '../../components/NavBar';
 
-export default function GameVue({ navigation }) {
+export default function GameVueLeague({ navigation }) {
+
+    const [visible, setVisible] = useState(false);
+    const toggleVisible = () => setVisible(!visible);
+
+    if (league.live) {
+        toggleVisible(true);
+    }
+
     return (
         <View style={styles.container}>
             <GameList />
 
-            <TouchableOpacity
-                style={styles.button}
-                onPress={() => navigation.navigate('AddGame')}>
-            </TouchableOpacity>
-
+            {/* Add a game button only if league is alive */}
+            {visible &&
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={() => navigation.navigate('AddGame')}>
+                    <Text style={styles.buttonText}>Add a Game</Text>
+                </TouchableOpacity>
+            }
             <NavBar />
         </View>
     );

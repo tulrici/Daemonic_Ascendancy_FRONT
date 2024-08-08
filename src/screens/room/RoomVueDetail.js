@@ -1,0 +1,1 @@
+//TODO detail of a room when clicked on

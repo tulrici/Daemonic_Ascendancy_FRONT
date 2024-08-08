@@ -4,18 +4,16 @@ import { Text, StyleSheet, View, TouchableOpacity } from 'react-native';
 export default function LeagueItem({ name }) {
 
     function first() {
-        return (<Text>"JeanMich(s) is currently first of the league with n points !"</Text>);
+        //TODO BACKEND: return the first(s) of the league
+        return (<Text style={styles.textContainer}>JeanMich(s) is currently first of the league with n points !</Text>);
     }
-//TODO BACKEND: return the first, firsts if exaequo of the league
-// trier "user.thisleague.score" ?
-
 
     return (
         <View style={styles.itemContainer}>
-            <Text style={styles.ligueName}>{name}</Text>
-             <Text style={styles.textContainer}>"JeanMich(s) is/are currently first of the league with n points !"</Text>
 
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('GameVue')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('GameVueLeague')}>
+                <Text style={styles.ligueName}>{name}</Text>
+                {first()}
                 <Text style={styles.buttonText}>Voir les games de la ligue</Text>
             </TouchableOpacity>
 

@@ -13,7 +13,6 @@ export default function LeagueVue({ navigation }) {
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 <LeagueList />
                 
-                {/* Toggle button always at the bottom */}
                 <View style={styles.toggleContainer}>
                     <TouchableOpacity style={styles.button} onPress={toggleVisible}>
                         <Text style={styles.buttonText}>Voir les ligues terminées</Text>
