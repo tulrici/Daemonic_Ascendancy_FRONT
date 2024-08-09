@@ -13,7 +13,7 @@ export default function NavBar() {
     };
 
     const navigateToProfile = () => {
-        navigation.navigate('Profile');
+        navigation.navigate('UserVue');
     };
 
     return (

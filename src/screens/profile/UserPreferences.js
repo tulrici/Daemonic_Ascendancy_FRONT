@@ -1,46 +1,29 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 import NavBar from '../../components/NavBar';
 
-export default function UserVue({ navigation }) {
-
-    // Hardcoded version number for now, but to be dynamic in the future
-    const appVersion = '1.0.1'; 
-
-    const deleteAccount = () => {
-        //TODO delete account logic in BACKEND
-        return { status: 200, message: 'Account deleted' };
-    };
-
-    const logout = () => {
-        //TODO logout logic in BACKEND
-        return { status: 200, message: 'Logged out' };
-    };
-
-    const reportBug = () => {
-        //TODO Report bug logic in BACKEND
-        return { status: 200, message: 'Bug reported' };
-    };
+export default function UserPreferences({ navigation }) {
 
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('UserPreferences')}>
-                <Text style={styles.buttonText}>User Preferences</Text>
-            </TouchableOpacity>
+            <Text style={styles.title} >Nothing Burger for now</Text>
 
-            <TouchableOpacity style={styles.button} onPress={reportBug}>
-                <Text style={styles.buttonText}>Report a Bug</Text>
-            </TouchableOpacity>
+            {/* Placeholder image, replace with a valid source */}
+            <Image
+                source={'assets/nothing.jpeg'}
+                style={{ width: 200, height: 200 }}
+            />
 
-            <TouchableOpacity style={styles.button} onPress={deleteAccount}>
-                <Text style={styles.buttonText}>Delete my Account</Text>
+            {/* Placeholder buttons */}
+            <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>Button 1</Text>
             </TouchableOpacity>
-
-            <TouchableOpacity style={styles.button} onPress={logout}>
-                <Text style={styles.buttonText}>Logout</Text>
+            <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>Button 2</Text>
             </TouchableOpacity>
-
-            <Text style={styles.appVersion}>Version {appVersion}</Text>
+            <TouchableOpacity style={styles.button}>
+                <Text style={styles.buttonText}>Button 3</Text>
+            </TouchableOpacity>
 
             <NavBar />
         </View>
