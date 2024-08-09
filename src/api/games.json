@@ -50,6 +50,23 @@
             "scorePlayer1": 3,
             "scorePlayer2": 17,
             "date": "2024-08-03"
+        },
+        {
+            "id": 4,
+            "name": "Tom vs jambons",
+            "users": [
+                {
+                    "id": 1,
+                    "name": "Tom"
+                },
+                {
+                    "id": 4,
+                    "name": "jambons"
+                }
+            ],
+            "scorePlayer1": 20,
+            "scorePlayer2": 0,
+            "date": "2024-08-03"
         }
     ]
 }
