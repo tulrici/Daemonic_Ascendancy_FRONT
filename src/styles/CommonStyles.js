@@ -1,40 +1,89 @@
 import { StyleSheet } from 'react-native';
 
-export default StyleSheet.create({
-    container: {
+const styles = StyleSheet.create({
+    // Styles for GameList component
+    listContainer: {
         flex: 1,
-        backgroundColor: '#1a1a1a', // Dark background
+        backgroundColor: '#1c1c1c', // Dark background for the list
+        padding: 10,
+    },
+    // Styles for GameItem component
+    itemContainer: {
+        backgroundColor: '#2c2c2c', // Dark background for each game item
+        padding: 15,
+        marginVertical: 10,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#444444', // Slightly lighter border
+    },
+    gameName: {
+        color: '#ff6666',
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+    players: {
+        color: '#cccccc',
+        fontSize: 16,
+    },
+    score: {
+        color: '#ff6666',
+        fontSize: 16,
+    },
+    winner: {
+        color: '#ffcc00',
+        fontSize: 16,
+    },
+    date: {
+        color: '#cccccc',
+        fontSize: 14,
+    },
+    // Styles for LeagueItem component
+    ligueName: {
+        color: '#ff6666',
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+    // Common styles for buttons
+    button: {
+        backgroundColor: '#ff4d4d', // Red background
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 5,
+        marginTop: 20, // Space above the button
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 20,
-    },
-    button: {
-        backgroundColor: '#ffffff', // White background for button
-        padding: 15,
-        borderRadius: 8,
-        marginVertical: 10,
-        borderWidth: 1,
-        borderColor: '#444444', // Slightly lighter border for button
-        minWidth: 250, // Ensures buttons have the same width
-        alignItems: 'center',
+        width: '70%', // Adjust as needed
+        maxWidth: 300, // Limit maximum width
     },
     buttonText: {
-        color: '#000000', // Black text on buttons
+        color: '#fff', // White text
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
+    // Styles for text containers
+    textContainer: {
+        color: '#ffcc00',
+        fontSize: 14,
+    },
+    ligueName: {
+        color: '#ff6666',
         fontSize: 18,
+        fontWeight: 'bold',
+    },
+    buttonTextLeague: {
+        color: '#ffcc00', // Gold text on buttons
+        fontSize: 12,
         textAlign: 'center',
     },
-    title: {
-        fontSize: 32,
-        fontWeight: 'bold',
-        color: '#ffcc00', // Gold color for a striking effect
-        textShadowColor: '#000000', // Shadow for a more ominous effect
-        textShadowOffset: { width: 2, height: 2 },
-        textShadowRadius: 5,
-        marginBottom: 15,
+    textContainerLeague: {
+        color: '#ffcc00',
+        fontSize: 14,
     },
-    versionText: {
-        fontSize: 12,
-        color: '#aaaaaa', // Light grey text for the version number
-        marginTop: 20,
-    },
+
+
+
+
+    
 });
+
+export default styles;

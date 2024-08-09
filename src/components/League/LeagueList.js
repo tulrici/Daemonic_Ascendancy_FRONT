@@ -3,6 +3,7 @@ import { View, StyleSheet } from 'react-native';
 import LeagueItem from './LeagueItem';
 import leaguesData from '../../api/leagues.json';
 
+
 export default function LeagueList({navigation}) {
     return (
         <View>
@@ -21,11 +22,3 @@ export default function LeagueList({navigation}) {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    listContainer: {
-        flex: 1,
-        backgroundColor: '#1c1c1c',
-        padding: 10,
-    },
-});

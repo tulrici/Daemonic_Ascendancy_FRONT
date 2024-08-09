@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import GameItem from './GameItem';
 import gamesData from '../../api/games.json';
+import Style from '../../styles/commonStyles';  // Using the centralized styles
 
 export default function GameList() {
-
-    const [Objgames, setObjgames] = useState(gamesData.games);
+    const [games, setGames] = useState([]);
 
     useEffect(() => {
-        setObjgames(gamesData.games);
+        setGames(gamesData.games);
     }, []);
 
-
     return (
-        <View>
-            {gamesData.games.map((game, index) => (
+        <View style={Style.listContainer}>
+            {games.map((game, index) => (
                 <GameItem
                     key={index}
                     name={game.name}
@@ -29,11 +28,3 @@ export default function GameList() {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    listContainer: {
-        flex: 1,
-        backgroundColor: '#1c1c1c',
-        padding: 10,
-    },
-});
