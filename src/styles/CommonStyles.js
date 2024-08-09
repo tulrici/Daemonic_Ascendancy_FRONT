@@ -79,7 +79,18 @@ const styles = StyleSheet.create({
         color: '#ffcc00',
         fontSize: 14,
     },
-
+    containerListEnd: {
+        flex: 1,
+        backgroundColor: '#1c1c1c',
+        padding: 10,
+        marginTop: 20, // Margin to separate from the previous section
+    },
+    titleListEnd: {
+        color: '#ffcc00', // Gold color for the title
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: 10, // Margin below the title
+    }
 
 
 
