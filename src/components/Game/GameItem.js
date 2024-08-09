@@ -12,6 +12,7 @@ export default function GameItem({ name, namePlayer1, namePlayer2, scorePlayer1,
         return "Draw";
     }}
 
+    //add touchableopacity to navigate to the game details as in the league
   return (
     <View style={styles.itemContainer}>
       <Text style={styles.gameName}>{name}</Text>

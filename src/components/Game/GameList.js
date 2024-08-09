@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import GameItem from './GameItem';
 import gamesData from '../../api/games.json';
 
 export default function GameList() {
+
+    const [Objgames, setObjgames] = useState(gamesData.games);
+
+    useEffect(() => {
+        setObjgames(gamesData.games);
+    }, []);
+
+
     return (
         <View>
             {gamesData.games.map((game, index) => (
