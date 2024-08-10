@@ -2,12 +2,14 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import UserItem from './UserItem';
 import UsersData from '../../api/users.json';
+import Style from '../../styles/commonStyles';
 
-export default function RoomList() {
+
+export default function UserList() {
     return (
         <View>
             {UsersData.users.map((User, index) => (
-                <RoomItem
+                <UserItem
                     key={index}
                     userName={User.userName}
                     email={Room.email}
@@ -17,10 +19,3 @@ export default function RoomList() {
     );
 }
 
-const styles = StyleSheet.create({
-    listContainer: {
-        flex: 1,
-        backgroundColor: '#1c1c1c',
-        padding: 10,
-    },
-});

@@ -9,10 +9,3 @@ export default function Article({ }) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-    TextTitre: {
-        color: '#fff',
-        fontSize: 25,
-    }
-});

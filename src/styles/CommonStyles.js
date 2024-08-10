@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
 
 const styles = StyleSheet.create({
     // Styles for GameList component
@@ -90,11 +90,65 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: 'bold',
         marginBottom: 10, // Margin below the title
+    },
+    logo: {
+        width: 50,
+        height: 50,
+        borderRadius: 25, // Optional: make the logo circular
+    },
+    textContainerRoomItem: {
+        flex: 1, // Allow text container to take up the remaining space
+    },
+
+    roomName: {
+        color: '#ff6666', // Red color for room name
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginBottom: 5,
+    },
+    logoContainer: {
+        marginRight: 15, // Space between logo and text
+    },
+    itemContainerRoomItem: {
+        flexDirection: 'row', // Align items horizontally
+        backgroundColor: '#2c2c2c', // Dark background for the box
+        padding: 15,
+        marginVertical: 10,
+        borderRadius: 8,
+        borderWidth: 1,
+        borderColor: '#444444', // Slightly lighter border
+        alignItems: 'center', // Center items vertically
+    },
+    users: {
+        color: '#ffcc00', // Gold color for users
+        fontSize: 16,
+        marginBottom: 5,
+    },
+    game: {
+        color: '#cccccc', // Light grey color for game
+        fontSize: 16,
+        marginBottom: 5,
+    },
+    date: {
+        color: '#cccccc', // Light grey color for date
+        fontSize: 14,
+    },
+    containerNavBar: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        backgroundColor: '#1c1c1c', // Dark gray background
+        padding: 10,
+        borderTopWidth: 1,
+        borderTopColor: '#333', // Slightly lighter gray for border
+        width: Dimensions.get('window').width, // Full width of the screen
+        position: 'absolute',
+        bottom: 0,
+    },
+    navButton: {
+        padding: 10,
     }
 
-
-
-    
 });
 
 export default styles;

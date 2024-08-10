@@ -4,6 +4,8 @@ import React from 'react';
 import { View, TouchableOpacity, StyleSheet, Dimensions } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import Style from '../styles/commonStyles';
+
 
 export default function NavBar() {
     const navigation = useNavigation();
@@ -17,7 +19,7 @@ export default function NavBar() {
     };
 
     return (
-        <View style={styles.container}>
+        <View style={Style.containerNavBar}>
             <TouchableOpacity onPress={navigateToHome} style={styles.navButton}>
                 <Icon name="home" size={30} color="#fff" /> 
             </TouchableOpacity>
@@ -30,19 +32,5 @@ export default function NavBar() {
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        backgroundColor: '#1c1c1c', // Dark gray background
-        padding: 10,
-        borderTopWidth: 1,
-        borderTopColor: '#333', // Slightly lighter gray for border
-        width: Dimensions.get('window').width, // Full width of the screen
-        position: 'absolute',
-        bottom: 0,
-    },
-    navButton: {
-        padding: 10,
-    },
+
 });

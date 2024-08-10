@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import RoomItem from './RoomItem';
 import RoomsData from '../../api/rooms.json';
+import Style from '../../styles/commonStyles';
 
 export default function RoomList() {
     return (
@@ -19,11 +20,3 @@ export default function RoomList() {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    listContainer: {
-        flex: 1,
-        backgroundColor: '#1c1c1c',
-        padding: 10,
-    },
-});
