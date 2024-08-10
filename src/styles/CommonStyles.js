@@ -147,7 +147,16 @@ const styles = StyleSheet.create({
     },
     navButton: {
         padding: 10,
-    }
+    },
+    ScreenOptions: {
+        headerStyle: {
+          backgroundColor: '#1c1c1c', // Same dark gray color as the bottom navbar
+        },
+        headerTintColor: '#fff', // White color for the header text and icons
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        }
+      }
 
 });
 
