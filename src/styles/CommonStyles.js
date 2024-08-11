@@ -156,7 +156,15 @@ const styles = StyleSheet.create({
         headerTitleStyle: {
           fontWeight: 'bold',
         }
-      }
+      },
+      containerVue: {
+        flex: 1,
+        backgroundColor: '#1a1a1a',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 20,
+    }
+
 
 });
 
