@@ -21,6 +21,10 @@ import Style from '../styles/commonStyles';
 
 const Stack = createStackNavigator();
 
+// aligner les boutons, tous de la même taille
+// aouter photos de profil, photos des games
+
+
 export default function AppNavigator() {
   return (
     <NavigationContainer>

@@ -4,6 +4,8 @@ import NavBar from '../../components/NavBar';
 
 export default function UserPreferences({ navigation }) {
 
+// photo de profil, photo des games
+
     return (
         <View style={styles.container}>
             <Text style={styles.title} >Nothing Burger for now</Text>
