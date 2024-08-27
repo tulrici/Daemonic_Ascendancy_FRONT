@@ -7,7 +7,7 @@ export default function HomeScreen({ navigation }) {
 
   // Hard-coded button padding
   // TODO create a .env file to store this value
-  const buttonPadding = 40;
+  const buttonPadding = 60;
 
   const onTextLayout = (event) => {
     const { width } = event.nativeEvent.layout;
