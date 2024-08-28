@@ -1,8 +1,8 @@
 {
   "expo": {
     "jsEngine": "hermes",
-    "name": "LocationDeVehicules",
-    "slug": "LocationDeVehicules",
+    "name": "daemonicascendency",
+    "slug": "daemonicascendency",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
