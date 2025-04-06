@@ -1,7 +1,3 @@
-Voici une version corrigée et actualisée de ton README pour le projet **Daemonic_Ascendancy**, en respectant la structure actuelle et la logique de ton projet :
-
----
-
 # Daemonic Ascendancy
 
 ## Description
@@ -95,7 +91,3 @@ module.exports = {
   plugins: [],
 };
 ```
-
----
-
-Souhaite-tu aussi un exemple visuel de rendu (mockup écran ou capture) ou tu préfères garder le README simple pour GitHub ?
